@@ -1,0 +1,4 @@
+Primera lista: [1, 2, 3, 4]
+Segunda lista: [5, 6, 7, 8]
+La suma de los elementos de las dos listas:
+[6, 8, 10, 12]

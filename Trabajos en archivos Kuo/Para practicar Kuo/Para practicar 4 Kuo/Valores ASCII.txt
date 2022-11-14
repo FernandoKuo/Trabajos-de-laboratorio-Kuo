@@ -1,0 +1,5 @@
+Texto original:
+- Hossein es una silla :O
+
+Texto en valor ASCII:
+- 72 111 115 115 101 105 110 32 101 115 32 117 110 97 32 115 105 108 108 97 32 58 79

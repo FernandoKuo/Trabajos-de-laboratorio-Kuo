@@ -1,0 +1,10 @@
+Productos y sus precios:
+- Teclado $1000
+- Computadora $1
+- Celular $9999
+- Hoja $87
+- Arena $17771
+
+Productos que superaron el promedio del precio: (>5771.6)
+- Celular $9999
+- Arena $17771
