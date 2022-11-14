@@ -1,0 +1,2 @@
+Los 5 numeros: [5, -2, 7, 8, 4]
+El mayor de los 5 numeros: 8El mayor numero se repite 1 veces
