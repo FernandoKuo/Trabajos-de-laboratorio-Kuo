@@ -1,4 +1,4 @@
-import pygame as pg
+"""import pygame as pg
 
 
 pg.init()
@@ -28,3 +28,13 @@ while running:
 
     pg.display.flip()
     clock.tick(60)
+"""
+
+nose = 'si'
+def test():
+    nose = 'no'
+
+test()
+print(nose)
+
+
