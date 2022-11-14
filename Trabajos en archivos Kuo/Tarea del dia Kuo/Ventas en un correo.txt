@@ -1,7 +1,0 @@
-Nombre del ultimo cliente: Gutierrez Pared
-Acciones realizadas:
-- Carta certificada.
-- Telagrama.
-- Carta de documento.
-- Telegrama de renuncia.
-Coste total: $10000Gracias por renunciar, adios

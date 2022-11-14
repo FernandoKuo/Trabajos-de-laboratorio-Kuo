@@ -1,2 +1,0 @@
-La ultima oracion ingresada tenia -1 espacios.
-La oracion: ""
