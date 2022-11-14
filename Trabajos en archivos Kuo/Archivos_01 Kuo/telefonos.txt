@@ -1,0 +1,5 @@
+Telefonos de los clientes:
+
+Hossein, 1234-5678
+Teclado, 6666-6666
+Nose, 9876-5432

@@ -1,0 +1,5 @@
+Nombres, notas y condiciones de los alumnos:
+Hossein   6   Suficiente
+Martin   9   Avanzado
+Choisissez   1   En Proceso
+Kuo   10   Avanzado
