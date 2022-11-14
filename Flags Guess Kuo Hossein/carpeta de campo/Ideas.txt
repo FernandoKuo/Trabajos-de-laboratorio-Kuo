@@ -1,0 +1,110 @@
+
+Juego de python (libreria pygame)
+Nombre: Flags Guess
+
+Integrantes:   4°2° C
+- Hossein Martin
+- Kuo Lee Fernando
+
+Juego:
+- Todo en español
+- Habra una imagen de una bandera y cuatro nombre de paises al lado
+- El jugador tendra que elejir el pais al que le corresponde la bandera
+- Se anotaran los puntos por cada bandera acertada
+Ingame:
+- 1000 x 500
+- Habra un menu con los nombres y banderas de todos los paises incluidos en el juego
+- Modo de juego: adivina el nombre de todas las banderas y gana
+- si no acertaste el nombre de una bandera no import aparecera de vuelta
+- el juego contara en cuantos intentos pudiste completarlo (min 75 winner)
+- resta de puntos: -1/15
+
+Source:
+- Hossein sera Mr. materiales y conseguira todas las imagenes de los mapas
+  Obviamente tienen que tener el mismo tamaño
+- Kuo hacer la lista de los paises.
+- Ambos trabajamos en el codigo. De alguna forma
+Links:
+- Inspirado en: https://world-geography-games.com/en/flags_world.html
+- Lista de paises: https://libretilla.com/paises-mas-poblados-del-mundo/
+
+
+
+Paises: 75
+
+] China
+] India
+] Estados Unidos
+] Indonesia
+] Pakistán
+] Brasil
+] Nigeria
+] Bangladesh
+] Rusia
+] México
+] Japón
+] Etiopía
+] Filipinas
+] Egipto
+] Vietnam
+] República Democrática del Congo
+] Alemania
+] Turquía
+] Irán
+] Tailandia
+] Reino Unido
+] Francia
+] Italia
+] Tanzania
+] Sudáfrica
+] Myanmar
+] Kenia
+] Corea del Sur
+] Colombia
+] España
+] Argentina
+] Uganda
+] Argelia
+] Sudán
+] Ucrania
+] Irak
+] Afganistán
+] Polonia
+] Canadá
+] Marruecos
+] Arabia Saudí
+] Uzbekistán
+] Perú
+] Angola
+] Malasia
+] Mozambique
+] Ghana
+] Yemen
+] Nepal
+] Venezuela
+] Madagascar
+] Camerún
+] Costa de Marfil
+] Corea del Norte
+] Australia
+] Níger
+] Taiwán
+] Sri Lanka
+] Burkina Faso
+] Malí
+] Malawi
+] Chile
+] Rumanía
+] Kazajistán
+] Zambia
+] Siria
+] Guatemala
+] Ecuador
+] Países Bajos
+] Senegal
+] Camboya
+] Chad
+] Somalia
+] Zimbabue
+] Guinea
+
