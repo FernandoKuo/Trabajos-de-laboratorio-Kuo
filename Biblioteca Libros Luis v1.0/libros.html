@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Libros Luis</title>
+    <link rel='stylesheet' href='estilos.css'>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <p class="titulo"> Nuevo Libro </p>
+    <br>
+
+    <table><FORM METHOD="post" action="php/data_libros.php">
+        <tr class="s">
+            <td> Titulo </td>
+            <td><INPUT TYPE="text" name="titulo" maxlength="50"> </td>
+        </tr>
+        <tr class="s">
+            <td> Autor </td>
+            <td><INPUT TYPE="text" name="autor" maxlength="50"> </td>
+        </tr>
+        <tr class="s">
+            <td> Genero </td>
+            <td><INPUT TYPE="text" name="genero" maxlength="50"> </td>
+        </tr>
+        <tr class="s">
+            <td> ISBN </td>
+            <td><INPUT TYPE="text" name="isbn" minlength="17" maxlength="17"> </td>
+        </tr>
+        <tr class="s">
+            <td> Cant. de ejemplares </td>
+            <td><INPUT TYPE="number" name="e_cant" min="0"> </td>
+        </tr>
+        <tr><td><br></td></tr>
+        <tr class="s">
+            <td> <INPUT TYPE="submit" name="submit" class="button" id="submit" VALUE="Subir"> </td>
+            <td> <INPUT TYPE="reset" name="reset" class="button" id="reset" VALUE="Resetear"> </td>
+        </tr>
+    </FORM></table>
+
+    <br><br><br>
+    <center><A class="a" HREF="index.html"> Volver </A></center>
+</body>
+</html>

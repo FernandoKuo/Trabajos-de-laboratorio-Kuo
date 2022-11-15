@@ -1,0 +1,83 @@
+
+@font-face {
+  font-family: baba;
+  src: url(fonts/Baba.otf);
+}
+
+div {
+  font-family: baba;
+}
+
+.titulo{
+  font: bold;
+  font-family: baba;
+  font-size: 65px;
+  color: white;
+  text-align: center;
+}
+
+.celda {
+  color: white;
+  text-indent: 30px;
+  font-family: baba;
+  font-size: 50px;
+  text-align: center;
+}
+
+.s{
+  color: white;
+  text-indent: 30px;
+  font-family: baba;
+  font-size: 30px;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  box-align: center;
+}
+
+.l{
+  color: white;
+  text-indent: 30px;
+  font-family: baba;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.button{
+  padding: 10px 15px;
+  font-size: 15px;
+  font-family: baba;
+}
+
+body {
+  background-image: url('images/background.jpg');
+  background-size: 100%;
+  background-position-y: 30%;
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a:link {
+  font-family: baba;
+  font-size: 40px;
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  
+}
+
+a:visited {    
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: cyan;
+  background-color: transparent;
+  text-decoration: underline;
+}
