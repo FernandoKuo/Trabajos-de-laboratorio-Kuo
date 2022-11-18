@@ -4,7 +4,7 @@ import random
 #puestos aca para ahorrar espacio
 
 #amongus
-amowords = ['R.D.C. es Rupública Democrática del Congo', 'I Found Among Us', 'Creditos a Tonanyulo3', 'Un poco SUS no crees?', 'Sabias que el pais mas chico del mundo es Vaticano?', 'Australia es mas ancha que la luna', 'Juego es inspirado por el World Flag Quiz', 'Vamos! tu puedes!', 'Te reto a sacar la nota perfecta', 'Estoy caminando!', 'Que pasará si me presionas?', '.-.', '', '']
+amowords = ['R.D.C. es Rupública Democrática del Congo', 'I Found Among Us', 'Creditos a Tonanyulo3 y azazz0_9', 'Creo que escuche algo raro desde los creditos', 'Un poco SUS no crees?', 'Sabias que el pais mas chico del mundo es Vaticano?', 'Australia es mas ancha que la luna', 'Juego es inspirado por el World Flag Quiz', 'Vamos! tu puedes!', 'Te reto a sacar la nota perfecta', 'Estoy caminando!', 'Que pasará si me presionas?', 'Africa esta en los cuatros emiferios', 'I used to vent', '.-.', '', '']
 
 #nombres de los paises de las banderas
 #R.D.C. means república democrútica del congo

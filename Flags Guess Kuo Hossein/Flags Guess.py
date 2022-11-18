@@ -25,6 +25,7 @@ def main(): #funcion principal
     pg.display.set_icon(icon)
     logo = image.load(path.join(path_images, 'FG logo.png')) #logo del juego
     logo = pg.transform.scale(logo, (650, 140))
+    pg.mixer.music.load(path.join(path_images, 'FG NGGYU.mp3'))
 
     bfont = pg.font.Font(None, 100) #default font: freesansbold
     font = pg.font.Font(None, 60)
@@ -53,6 +54,7 @@ def main(): #funcion principal
                     if event.key == K_p or event.key == K_ESCAPE:
                         pausing[0] = False
             
+            #dibujar botones del pausado
             pausa_titulo.draw()
             pausa_resumir.draw()
             pausa_reiniciar.draw()
@@ -120,9 +122,9 @@ def main(): #funcion principal
             if not answered[0]:
                 if once[0]: 
                     try:
-                        aflag = random.choice(cflags) #elejir bandera
+                        aflag = random.choice(cflags)
                         cflags.remove(aflag)
-                        answer = aflag.name #elejir los nombres que apareceran
+                        answer = aflag.name
                         provinces.remove(answer)
                         names = random.sample(provinces, 3)
                         names.append(answer)
@@ -130,18 +132,18 @@ def main(): #funcion principal
                         random.shuffle(names)
                     except: 
                         over[0] = True
-                    B1 = button((545, 30)) #reseteo de botones
+                    B1 = button((545, 30))
                     B2 = button((545, 117))
                     B3 = button((545, 204))
                     B4 = button((545, 291))
-                    once[0] = False #para que no repita otra vez
+                    once[0] = False
                     right = [False]
                     flags_count = f'{str(24-len(cflags))}/24'
 
                 B1.motion_draw(names[0])
                 B2.motion_draw(names[1])
                 B3.motion_draw(names[2])
-                B4.motion_draw(names[3]) #funcionan ya que las variables son globales
+                B4.motion_draw(names[3])
             
             else: 
                 B1.draw(names[0])
@@ -157,7 +159,6 @@ def main(): #funcion principal
                     over[0] = False
                 once[0] = True
             
-            #mostrar bandera, puntos y cuenta
             pg.draw.rect(screen, (255, 255, 255), (30, 30, 500, 333))
             aflag.draw()
             pg.draw.rect(screen, (0, 0, 0), (30, 30, 500, 333), 4)
@@ -281,8 +282,8 @@ def main(): #funcion principal
     pausa_resumir = draw_button('Resumir', (400, 180, 200, 50), (0, 128, 255), (51, 153, 255))
     pausa_reiniciar = draw_button('Reiniciar', (400, 250, 200, 50), (0, 128, 255), (51, 153, 255))
     pausa_irmenu = draw_button('Ir al menu', (400, 320, 200, 50), (0, 128, 255), (51, 153, 255))
-    menu_countries = draw_button('Países', (225, 310, 220, 60), (0, 255, 0), (100, 255, 100))
-    menu_provinces = draw_button('Provincias', (525, 310, 220, 60), (0, 255, 0), (100, 255, 100))
+    menu_countries = draw_button('Países', (225, 310, 220, 60), (255, 153, 51), (255, 178, 102))
+    menu_provinces = draw_button('Provincias', (525, 310, 220, 60), (255, 153, 51), (255, 178, 102))
     gm_irmenu = draw_button('Ir al menu', (400, 360, 200, 50), (0, 128, 255), (51, 153, 255))
     play_button = image.load(path.join(path_buttons, 'play_button.png'))
     play_button_rect = play_button.get_rect()
@@ -298,13 +299,13 @@ def main(): #funcion principal
 
     #configuracion del amongus
     amocount = 0
-    amoimage = None
     amotext = None
     amotext = ssfont.render(random.choice(amowords), True, (0, 0, 0))
     amowalking = [pg.transform.scale(image.load(path.join(path_amo, 'Walkmogus1.png')), (120, 120)), 
                   pg.transform.scale(image.load(path.join(path_amo, 'Walkmogus2.png')), (120, 120)), 
                   pg.transform.scale(image.load(path.join(path_amo, 'Walkmogus3.png')), (120, 120)), 
                   pg.transform.scale(image.load(path.join(path_amo, 'Walkmogus4.png')), (120, 120))]
+    amoimage = amowalking[amocount]
     amorect = amowalking[0].get_rect()
     amorect.topleft = (220, 365)
     amoclicked = False
@@ -326,6 +327,9 @@ def main(): #funcion principal
         elif status[0] == 'menu': #setting easy menu
             screen.blit(logo, (175, 70)) #siempre muestran en el menu
             screen.blit(credits_text, (870, 481))
+            if pg.Rect(870, 481, 125, 14).collidepoint(pg.mouse.get_pos()):
+                if pg.mouse.get_pressed()[0]:
+                    pg.mixer.music.play(-1)
             if option[0] == 'menu':
                 screen.blit(play_button, play_button_rect)
                 #para que funcione correctamente el boton de jugar
@@ -360,6 +364,7 @@ def main(): #funcion principal
             screen.blit(surf, surf_rect)
             paused()
         
+        #checkear eventos que pasan
         for event in pg.event.get():
             if event.type == QUIT:
                 pg.quit()
@@ -375,7 +380,7 @@ def main(): #funcion principal
             if event.type == amosay:
                 amotext = ssfont.render(random.choice(amowords), True, (0, 0, 0))
                 amoattemptword = ssfont.render(f'Ya vas con {attempts[0]} intentos', True, (0, 0, 0))
-                amotext = random.choices([amotext, amoattemptword], [5, 1])[0]
+                amotext = random.choices([amotext, amoattemptword], [6, 1])[0]
 
         pg.display.flip()
         clock.tick(50)
@@ -385,22 +390,10 @@ pausing = [False]
 mode = [None]
 amowalk = USEREVENT
 amosay = USEREVENT + 1
-pg.time.set_timer(amowalk, 400)
+pg.time.set_timer(amowalk, 300)
 pg.time.set_timer(amosay, 6000)
 #el juego se reinicia cuando pongo reiniciar o ir al menu
 while __name__ == '__main__': #para que no se importe como modulo
     main()
 
-#Ideas de palabras para el amongus
-"""
-- 'R.D.C. representa\nRupública Democrática del Congo'
-- 'Ya vas con {attempt} intentos' (va sumando mientras el texto esta mostrandose)
-- 'I Found Among Us'
-- 'Recuerda echarle un vistazo a los creditos!'
-- 'Un poco SUS no crees?'
-- 'Sabias que el pais mas chico del mundo es Vaticano?'
-- 'Australia es mas ancha que la luna'
 
-Sera un amongus que minimo se estara moviendo (agitando el trasero o caminando)
-Para que sea divertido el jugador tendra que clickerarlo para que comienze a moverse
-"""
